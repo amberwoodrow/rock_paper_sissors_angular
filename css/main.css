@@ -1,0 +1,31 @@
+body {
+  font-family: 'Indie Flower', cursive;
+  background-color: beige;
+}
+
+.pickPic{
+  height:200px;
+  border-radius: 5px;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+.row .btn{
+  border: thin black solid;
+  margin: 15px;
+  padding: 0;
+}
+
+.center{
+  margin: auto;
+  display: block;
+}
+
+
+.scissors{
+  padding: 10px;
+  background-color: white;
+}

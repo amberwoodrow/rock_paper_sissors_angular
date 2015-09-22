@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Rock, Paper, Scissors</title>
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <!-- sample angular code -->
+    <div class="container">
+      <div ng-controller="myController">
+        <h1>{{ greeting }}</h1>
+
+        <div class="row">
+          <div class="col-md-4">
+            <button class="btn" ng-click="comparePicks(0, $scope)"><img class='pickPic' src ="http://www.chickensmoothie.com/oekaki/image/image.php?id=1232401&size=large&format=auto&rev=1352014256"></button>
+          </div>
+
+          <div class="col-md-4">
+            <button class="btn" ng-click="comparePicks(1, $scope)"><img class='pickPic' src ="http://i486.photobucket.com/albums/rr224/TheCoolDude101/lets-roll.jpg"></button>
+          </div>
+
+          <div class="col-md-4">
+            <button class="btn" ng-click="comparePicks(2, $scope)"><img class='scissors pickPic' src ="scissors.png"></button>
+          </div>
+        </div>
+
+
+        <br>
+        <h3 ng-show='show'>
+            You chose {{userPick}}. Your opponent chose {{computerPick}}.
+        </h3>
+
+
+        <h3>{{result}}</h3>
+
+        <div class="row">
+
+          <h2 class="col-md-6">Player's score: {{playerScore}}</h2>
+
+          <h2 class="col-md-6">Computer's score: {{computerScore}}</h2>
+
+        </div>
+        <button ng-click='playerScore = computerScore = 0' class = 'btn btn-warning center'>Reset</button>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/angular.js"></script>
+  </body>
+</html>
